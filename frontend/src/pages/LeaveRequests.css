@@ -1,0 +1,137 @@
+.leave-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+.leave-page h1 {
+  font-size: 38px;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+.leave-form {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.leave-form select,
+.leave-form input,
+.leave-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #d8dee9;
+  border-radius: 9px;
+  font-size: 15px;
+  background: white;
+  color: #1e293b;
+  outline: none;
+  transition: 0.2s;
+}
+
+.leave-form select:focus,
+.leave-form input:focus,
+.leave-form textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.leave-form textarea {
+  min-height: 90px;
+  resize: vertical;
+  grid-column: 1 / -1;
+}
+
+.leave-form button {
+  grid-column: 1 / -1;
+  width: fit-content;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 9px;
+  background: #4f46e5;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.leave-form button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.leave-page hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 45px 0 30px;
+}
+
+.leave-page h2 {
+  font-size: 26px;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.leave-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.leave-card {
+  background: white;
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
+.leave-card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #111827;
+}
+
+.leave-card p {
+  margin: 8px 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.leave-status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+
+  .leave-page {
+    padding: 30px 18px;
+  }
+
+  .leave-form,
+  .leave-list {
+    grid-template-columns: 1fr;
+  }
+
+  .leave-form textarea,
+  .leave-form button {
+    grid-column: auto;
+  }
+
+}

@@ -52,7 +52,6 @@
   transform: translateY(-1px);
 }
 
-/* Employees Grid */
 .employees-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -204,7 +203,6 @@
   margin: 0 auto 1.5rem auto;
 }
 
-/* Edit Modal / Drawer Overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
