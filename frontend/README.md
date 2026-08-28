@@ -1,16 +1,106 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# 🚀 EmployeeHub AI
 
-Currently, two official plugins are available:
+### Smart Employee Management System
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p>
+  A modern full-stack employee management platform built with
+  <strong>React + Django REST Framework</strong>.
+</p>
 
-## React Compiler
+<br/>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=Employee+Management+System;React+%2B+Django+REST+Framework;JWT+Authentication;Leave+Request+Management;Built+for+Real+World+Use" />
 
-## Expanding the Oxlint configuration
+<br/><br/>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+![React](https://img.shields.io/badge/React-2026-blue?style=for-the-badge&logo=react)
+![Django](https://img.shields.io/badge/Django-REST-092E20?style=for-the-badge&logo=django)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python)
+![JWT](https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge&logo=jsonwebtokens)
+
+</div>
+
+---
+
+## ✨ About The Project
+
+**EmployeeHub AI** is a full-stack employee management application designed to demonstrate how a modern React frontend communicates with a Django REST backend.
+
+The application provides employee management, authentication, and leave request functionality through a clean and responsive interface.
+
+The project focuses on building a real-world architecture rather than a simple CRUD application.
+
+---
+
+## 🎯 Features
+
+### 🔐 Authentication
+
+- JWT-based authentication
+- Login system
+- Access & refresh tokens
+- Protected API endpoints
+- Automatic access-token refresh
+- Logout functionality
+
+### 👨‍💼 Employee Management
+
+- Add employees
+- View employees
+- Update employees
+- Delete employees
+- Employee details
+- Department information
+- Salary management
+
+### 🏖️ Leave Management
+
+- Submit leave requests
+- Select employees from the UI
+- Casual, Sick and Emergency leave
+- Start and end dates
+- Leave reason
+- Pending / Approved / Rejected status
+- View previous leave requests
+
+### ⚡ REST API
+
+- Django REST Framework
+- Model serializers
+- APIView / Generic API views
+- JWT authentication
+- Request validation
+- Database integration
+
+---
+
+## 🏗️ Architecture
+
+```text
+                    ┌──────────────────────┐
+                    │      React UI        │
+                    │                      │
+                    │  Components / Pages  │
+                    └──────────┬───────────┘
+                               │
+                               │ Axios
+                               ▼
+                    ┌──────────────────────┐
+                    │    Django REST API   │
+                    │                      │
+                    │ Views + Serializers  │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │     Django ORM       │
+                    │                      │
+                    │ Models + Validation  │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │      Database        │
+                    └──────────────────────┘
